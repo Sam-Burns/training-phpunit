@@ -1,0 +1,57 @@
+<phpunit>
+
+    <testsuites>
+        <testsuite name="ex1">
+            <directory>./exercises/01-basic-example/</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex2">
+            <directory>./exercises/02-making-things-run</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex3">
+            <directory>./exercises/NJFDKLFBDSJFBLKSDBFDKJJL<!--03-making-things-run-ii--></directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex5">
+            <directory>./exercises/05-mock-intro</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex6">
+            <directory>./exercises/06-building-mocks</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex7">
+            <directory>./exercises/07-mocks-with-consecutive-calls</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex8">
+            <directory>./exercises/08-mocks-and-return-value-maps</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex13">
+            <directory>./exercises/13-teardowns</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="all">
+            <directory>./exercises/</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>

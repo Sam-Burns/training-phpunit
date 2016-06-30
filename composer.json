@@ -1,0 +1,26 @@
+{
+    "name": "sam-burns/training-phpunit",
+
+    "license": "MIT",
+
+    "config": {
+        "bin-dir": "bin/"
+    },
+
+    "require": {
+        "phpunit/phpunit": "~5.3.5"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "PhpUnitTraining\\Exercise01\\": "exercises/A-phpunit-config/01-basic-example/src/",
+            "PhpUnitTraining\\Exercise02\\": "exercises/A-phpunit-config/02-making-things-run/src/",
+            "PhpUnitTraining\\Exercise03\\": "exercises/A-phpunit-config/03-making-things-run-ii/src/",
+            "PhpUnitTraining\\Exercise05\\": "exercises/B-phpunit-basics/05-mock-intro/src/",
+            "PhpUnitTraining\\Exercise06\\": "exercises/B-phpunit-basics/06-building-mocks/src/",
+            "PhpUnitTraining\\Exercise07\\": "exercises/D-advanced-mock-usage/13-mocks-with-consecutive-calls/src/",
+            "PhpUnitTraining\\Exercise08\\": "exercises/D-advanced-mock-usage/14-mocks-and-return-value-maps/src/",
+            "PhpUnitTraining\\Exercise13\\": "exercises/C-additional-features/10-teardowns/src/"
+        }
+    }
+}
