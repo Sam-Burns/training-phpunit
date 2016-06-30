@@ -1,5 +1,5 @@
 <?php
-namespace PhpUnitTrainingTest\Exercise12;
+namespace PhpUnitTrainingTest\Exercise08;
 
 use PhpUnitTraining\Exercise08\Dependency;
 use PhpUnitTraining\Exercise08\Subject;
@@ -25,6 +25,8 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 
     public function testIts42()
     {
+        $this->markTestSkipped();
+
         // ASSERT
 
         // Something specific must be written to DB
@@ -40,6 +42,8 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 
     public function testItsSomethingElse()
     {
+        $this->markTestSkipped();
+
         // ASSERT
 
         // Something specific must be written to DB
@@ -55,6 +59,8 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 
     public function testItsAThirdThing()
     {
+        $this->markTestSkipped();
+
         // ASSERT
 
         // Something specific must be written to DB

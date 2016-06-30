@@ -7,6 +7,8 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
+        $this->markTestSkipped(); /** @todo Stop skipping test */
+
         // ARRANGE
         $subjectUnderTest = new Subject();
 

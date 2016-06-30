@@ -1,13 +1,15 @@
 <?php
-namespace PhpUnitTrainingTest\Exercise15;
+namespace PhpUnitTrainingTest\Exercise16;
 
-use PhpUnitTraining\Exercise15\Dependency;
-use PhpUnitTraining\Exercise15\Subject;
+use PhpUnitTraining\Exercise16\Dependency;
+use PhpUnitTraining\Exercise16\Subject;
 
 class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
+        $this->markTestSkipped();
+
         // ARRANGE
         $subjectUnderTest = $this->getPartialMockOfSubjectUnderTest();
 

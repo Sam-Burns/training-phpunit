@@ -1,9 +1,9 @@
-# Exercise 01 - Basic Example
+# Exercise 05 - Mock Intro
 
-The production code for this example is in the `exercises/01-basic-example/src/` directory.  The PHPUnit stuff is
-in the `exercises/01-basic-example/test/` directory.  You can run the tests for this exercises from the project root,
-by typing `./bin/phpunit exercises/01-basic-example/test`.
+You can run the test suite for exercise 5 by typing `./bin/phpunit --testsuite ex5`.
 
-The `Subject` class is under test, but it is failing its test! Change the production code in the `src/` directory, to fix
-the bug and make it pass.  Look carefully at the test output for this example, to see what behaviour is expected.  Reading
-the unit test will also help.
+In this exercise, we are trying to get the `Subject` under test, but in needs an instance of `HorribleDependency`.  Have
+a look at `HorribleDependency`, to see why we can't instantiate it.
+
+The unit test is marked as skipped, so get rid of that bit and make it run.  You will then need to tweak the behaviour of the mock
+object, in order to make the test pass.

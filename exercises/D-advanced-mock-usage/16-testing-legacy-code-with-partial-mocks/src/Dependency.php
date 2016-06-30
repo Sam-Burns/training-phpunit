@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpUnitTraining\Exercise15;
+namespace PhpUnitTraining\Exercise16;
 
 class Dependency
 {

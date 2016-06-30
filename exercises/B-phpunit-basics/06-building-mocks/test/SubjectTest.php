@@ -1,5 +1,5 @@
 <?php
-namespace PhpUnitTrainingTest\Exercise05;
+namespace PhpUnitTrainingTest\Exercise06;
 
 use PhpUnitTraining\Exercise06\Dependency;
 use PhpUnitTraining\Exercise06\Subject;
@@ -8,6 +8,8 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
+        $this->markTestSkipped();
+
         // ARRANGE
         $subjectUnderTest = new Subject($this->getMockDependency());
 
@@ -19,6 +21,8 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * @todo Fix these mock expectations
+     *
      * @return \PHPUnit_Framework_MockObject_MockObject|Dependency
      */
     public function getMockDependency()

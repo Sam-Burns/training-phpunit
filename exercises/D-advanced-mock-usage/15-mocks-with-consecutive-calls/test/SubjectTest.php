@@ -1,13 +1,15 @@
 <?php
-namespace PhpUnitTrainingTest\Exercise13;
+namespace PhpUnitTrainingTest\Exercise15;
 
-use PhpUnitTraining\Exercise13\Dependency;
-use PhpUnitTraining\Exercise13\Subject;
+use PhpUnitTraining\Exercise15\Dependency;
+use PhpUnitTraining\Exercise15\Subject;
 
 class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
+        $this->markTestSkipped();
+
         // ARRANGE
         $subjectUnderTest = new Subject($this->getMockDependency());
 

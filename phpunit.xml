@@ -2,49 +2,79 @@
 
     <testsuites>
         <testsuite name="ex1">
-            <directory>./exercises/01-basic-example/</directory>
+            <directory>./exercises/A-phpunit-config/01-basic-example/test/</directory>
         </testsuite>
     </testsuites>
 
     <testsuites>
         <testsuite name="ex2">
-            <directory>./exercises/02-making-things-run</directory>
+            <directory>./exercises/A-phpunit-config/02-making-things-run/test/</directory>
         </testsuite>
     </testsuites>
 
     <testsuites>
         <testsuite name="ex3">
-            <directory>./exercises/NJFDKLFBDSJFBLKSDBFDKJJL<!--03-making-things-run-ii--></directory>
+            <directory>./exercises/A-phpunit-config/FBHJDLFDHFJLBFDI/test/<!--03-making-things-run-ii--></directory>
         </testsuite>
     </testsuites>
 
     <testsuites>
         <testsuite name="ex5">
-            <directory>./exercises/05-mock-intro</directory>
+            <directory>./exercises/B-phpunit-basics/05-mock-intro/test</directory>
         </testsuite>
     </testsuites>
 
     <testsuites>
         <testsuite name="ex6">
-            <directory>./exercises/06-building-mocks</directory>
+            <directory>./exercises/B-phpunit-basics/06-building-mocks/test</directory>
         </testsuite>
     </testsuites>
 
     <testsuites>
         <testsuite name="ex7">
-            <directory>./exercises/07-mocks-with-consecutive-calls</directory>
+            <directory>./exercises/B-phpunit-basics/07-parameters-for-mock-methods/test</directory>
         </testsuite>
     </testsuites>
 
     <testsuites>
         <testsuite name="ex8">
-            <directory>./exercises/08-mocks-and-return-value-maps</directory>
+            <directory>./exercises/B-phpunit-basics/08-setups/test</directory>
         </testsuite>
     </testsuites>
 
     <testsuites>
-        <testsuite name="ex13">
-            <directory>./exercises/13-teardowns</directory>
+        <testsuite name="ex10">
+            <directory>./exercises/C-additional-features/10-teardowns/test</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex11">
+            <directory>./exercises/C-additional-features/11-data-providers/test</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex12">
+            <directory>./exercises/C-additional-features/12-exceptions/test</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex14">
+            <directory>./exercises/D-advanced-mock-usage/14-mocks-and-return-value-maps/test</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex15">
+            <directory>./exercises/D-advanced-mock-usage/15-mocks-with-consecutive-calls/test</directory>
+        </testsuite>
+    </testsuites>
+
+    <testsuites>
+        <testsuite name="ex16">
+            <directory>./exercises/D-advanced-mock-usage/16-testing-legacy-code-with-partial-mocks/test</directory>
         </testsuite>
     </testsuites>
 

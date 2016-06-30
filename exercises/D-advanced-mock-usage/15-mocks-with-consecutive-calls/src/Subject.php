@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpUnitTraining\Exercise13;
+namespace PhpUnitTraining\Exercise15;
 
 class Subject
 {

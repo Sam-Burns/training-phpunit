@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpUnitTraining\Exercise13;
+namespace PhpUnitTraining\Exercise15;
 
 class Dependency
 {
-    private $returnValues = [2, 50, 4, 4];
+    private $returnValues = [2, 25, 4, 4];
 
     public function getANumber()
     {
