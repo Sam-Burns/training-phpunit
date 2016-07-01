@@ -49,12 +49,12 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
         // Something specific must be written to DB
         $this->mockDbDependency
             ->expects($this->once())
-            ->method('writeAnotherNumberToDb')
+            ->method('writeNumberToDb')
             ->with(42)
             ->will($this->returnValue(true));
 
         // ACT
-        $this->subjectUnderTest->writeNumberToDb();
+        $this->subjectUnderTest->writeAnotherNumberToDb();
     }
 
     public function testItsAThirdThing()
@@ -66,11 +66,11 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
         // Something specific must be written to DB
         $this->mockDbDependency
             ->expects($this->once())
-            ->method('writeThirdNumberToDb')
+            ->method('writeNumberToDb')
             ->with(42)
             ->will($this->returnValue(true));
 
         // ACT
-        $this->subjectUnderTest->writeNumberToDb();
+        $this->subjectUnderTest->writeThirdNumberToDb();
     }
 }

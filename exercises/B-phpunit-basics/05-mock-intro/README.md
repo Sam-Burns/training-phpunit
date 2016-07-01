@@ -6,4 +6,5 @@ In this exercise, we are trying to get the `Subject` under test, but in needs an
 a look at `HorribleDependency`, to see why we can't instantiate it.
 
 The unit test is marked as skipped, so get rid of that bit and make it run.  You will then need to tweak the behaviour of the mock
-object, in order to make the test pass.
+object, in order to make the test pass.  You will also need to stop the test from using the method `getRealDependency`, and get
+it to use `getMockDependency` instead.

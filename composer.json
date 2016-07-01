@@ -12,6 +12,24 @@
     },
 
     "autoload": {
-        "classmap": ["exercises"]
+        "psr-4": {
+
+            "PhpUnitTraining\\Exercise01\\": "exercises/A-phpunit-config/01-basic-example/src",
+            "PhpUnitTraining\\Exercise02\\": "exercises/A-phpunit-config/02-making-things-run/src",
+            "PhpUnitTraining\\Exercise03\\": "exercises/A-phpunit-config/03-making-things-run-ii/src",
+
+            "PhpUnitTraining\\Exercise05\\": "exercises/B-phpunit-basics/05-mock-intro/src",
+            "PhpUnitTraining\\Exercise06\\": "exercises/B-phpunit-basics/06-building-mocks/src",
+            "PhpUnitTraining\\Exercise07\\": "exercises/B-phpunit-basics/07-parameters-for-mock-methods/src",
+            "PhpUnitTraining\\Exercise08\\": "exercises/B-phpunit-basics/08-setups/src",
+
+            "PhpUnitTraining\\Exercise10\\": "exercises/C-additional-features/10-teardowns/src",
+            "PhpUnitTraining\\Exercise11\\": "exercises/C-additional-features/11-data-providers/src",
+            "PhpUnitTraining\\Exercise12\\": "exercises/C-additional-features/12-exceptions/src",
+
+            "PhpUnitTraining\\Exercise14\\": "exercises/D-advanced-mock-usage/14-mocks-and-return-value-maps/src",
+            "PhpUnitTraining\\Exercise15\\": "exercises/D-advanced-mock-usage/15-mocks-with-consecutive-calls/src",
+            "PhpUnitTraining\\Exercise16\\": "exercises/D-advanced-mock-usage/16-testing-legacy-code-with-partial-mocks/src"
+        }
     }
 }

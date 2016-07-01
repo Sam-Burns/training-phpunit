@@ -42,6 +42,13 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
      */
     private function getMockDependency()
     {
-        return $this->getMock(Dependency::class, [], [], '', true);
+        $mockDependency = $this->getMock(Dependency::class, [], [], '', true);
+
+        $mockDependency
+            ->expects($this->once())
+            ->method('getNumberFromDb')
+            ->will($this->returnValue(42));
+
+        return $mockDependency;
     }
 }

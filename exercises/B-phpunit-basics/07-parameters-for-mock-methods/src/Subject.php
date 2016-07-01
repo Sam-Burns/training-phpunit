@@ -16,7 +16,7 @@ class Subject
      */
     public function writeNumberToDb()
     {
-        $numberToWrite = 2 * 50 - 4 - 4;
+        $numberToWrite = 2 * 25 - 4 - 4;
         return $this->dependency->writeNumberToDb($numberToWrite);
     }
 }

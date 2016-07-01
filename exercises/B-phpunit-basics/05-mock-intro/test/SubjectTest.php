@@ -23,7 +23,7 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
     /**
      * @return HorribleDependency
      */
-    public function getRealDependency()
+    private function getRealDependency()
     {
         return new HorribleDependency();
     }
@@ -31,7 +31,7 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
     /**
      * @return \PHPUnit_Framework_MockObject_MockObject|HorribleDependency
      */
-    public function getMockDependency()
+    private function getMockDependency()
     {
         $mockDependency = $this->getMock(HorribleDependency::class, [], [], '', false);
 
