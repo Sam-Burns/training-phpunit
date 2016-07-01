@@ -5,7 +5,7 @@ use PhpUnitTraining\Exercise02\Subject2;
 
 class Subject2Test extends \PHPUnit_Framework_TestCase
 {
-    public function xxxxIts42()
+    public function testIts42()
     {
         // ARRANGE
         $subjectUnderTest = new Subject2();

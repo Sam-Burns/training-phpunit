@@ -8,8 +8,6 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
-        $this->markTestSkipped();
-        
         // ARRANGE
 
         // We need a mock dependency
@@ -19,8 +17,8 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
         $mockDependency
             ->expects($this->once())
             ->method('writeNumberToDb')
-            ->with(41)
-            ->will($this->returnValue(null));
+            ->with(42)
+            ->will($this->returnValue(true));
 
         // Create the subject under test
         $subjectUnderTest = new Subject($mockDependency);

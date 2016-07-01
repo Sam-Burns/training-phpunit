@@ -20,8 +20,6 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
      */
     public function testKnowsIfNumbersAreEvenOrOdd($testCase, $expectedResult, $messageIfTestFails)
     {
-        $this->markTestSkipped();
-
         $actualResult = $this->subjectUnderTest->figureOutIfNumberIsEven($testCase);
 
         $this->assertEquals($expectedResult, $actualResult, $messageIfTestFails);
@@ -34,9 +32,9 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [1, false, 'I wrote this example because the number 1 is odd'],
-            [2, false, 'I wrote this example because the number 2 is odd'],
+            [2, true, 'I wrote this example because the number 2 is even'],
             [3, false, 'I wrote this example because the number 3 is odd'],
-            [4, false, 'I wrote this example because the number 4 is odd'],
+            [4, true, 'I wrote this example because the number 4 is even'],
             [5, false, 'I wrote this example because the number 5 is odd'],
         ];
     }

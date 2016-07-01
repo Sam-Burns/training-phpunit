@@ -16,20 +16,16 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \InvalidArgumentException
+     * @expectedException \RuntimeException
      */
     public function testItCanThrowExceptions()
     {
-        $this->markTestSkipped();
-
         $this->subjectUnderTest->throwException();
     }
 
     public function testItCanThrowExceptionsAgain()
     {
-        $this->markTestSkipped();
-
-        $this->expectException('\OutOfBoundsException');
+        $this->expectException('\RuntimeException');
 
         $this->subjectUnderTest->throwException();
     }

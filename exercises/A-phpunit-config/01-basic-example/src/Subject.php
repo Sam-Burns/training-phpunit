@@ -11,6 +11,6 @@ class Subject
      */
     public function getNumber()
     {
-        return 41;
+        return 42;
     }
 }

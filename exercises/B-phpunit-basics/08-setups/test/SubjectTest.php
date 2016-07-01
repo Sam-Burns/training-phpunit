@@ -25,8 +25,6 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 
     public function testIts42()
     {
-        $this->markTestSkipped();
-
         // ASSERT
 
         // Something specific must be written to DB
@@ -42,15 +40,13 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 
     public function testItsSomethingElse()
     {
-        $this->markTestSkipped();
-
         // ASSERT
 
         // Something specific must be written to DB
         $this->mockDbDependency
             ->expects($this->once())
             ->method('writeNumberToDb')
-            ->with(42)
+            ->with(43)
             ->will($this->returnValue(true));
 
         // ACT
@@ -59,15 +55,13 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 
     public function testItsAThirdThing()
     {
-        $this->markTestSkipped();
-
         // ASSERT
 
         // Something specific must be written to DB
         $this->mockDbDependency
             ->expects($this->once())
             ->method('writeNumberToDb')
-            ->with(42)
+            ->with(44)
             ->will($this->returnValue(true));
 
         // ACT

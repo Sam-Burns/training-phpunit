@@ -8,8 +8,6 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
-        $this->markTestSkipped();
-
         // ARRANGE
         $subjectUnderTest = new Subject($this->getMockDependency());
 
@@ -30,7 +28,7 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
         $mockDependency
             ->expects($this->any())
             ->method('getANumber')
-            ->will($this->onConsecutiveCalls(-1, -1, -1, -1));
+            ->will($this->onConsecutiveCalls(2, 25, 4, 4));
 
         return $mockDependency;
     }

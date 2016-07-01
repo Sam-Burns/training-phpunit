@@ -8,8 +8,6 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
-        $this->markTestSkipped();
-
         // ARRANGE
         $subjectUnderTest = new Subject($this->getMockDependency());
 
@@ -30,7 +28,7 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
         $returnValueMap = [
             [2,   2],
             [25, 25],
-            [4,   -1],
+            [4,   4],
         ];
 
         $mockDependency

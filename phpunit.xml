@@ -14,7 +14,7 @@
 
     <testsuites>
         <testsuite name="ex3">
-            <directory>./exercises/A-phpunit-config/FBHJDLFDHFJLBFDI/test/<!--03-making-things-run-ii--></directory>
+            <directory>./exercises/A-phpunit-config/03-making-things-run-ii/test/</directory>
         </testsuite>
     </testsuites>
 

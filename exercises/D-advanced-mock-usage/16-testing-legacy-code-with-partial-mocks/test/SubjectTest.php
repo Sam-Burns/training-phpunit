@@ -8,8 +8,6 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
-        $this->markTestSkipped();
-
         // ARRANGE
         $subjectUnderTest = $this->getPartialMockOfSubjectUnderTest();
 
@@ -27,11 +25,11 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
     {
         $mockDependency = $this->getMockDependency();
 
-        $partialMock = $this->getMock(Subject::class, ['a-method-name'], ['some string'], '',  true);
+        $partialMock = $this->getMock(Subject::class, ['getDatabaseDependency'], ['Hello world'], '',  true);
 
         $partialMock
             ->expects($this->any())
-            ->method('a-method-name')
+            ->method('getDatabaseDependency')
             ->will($this->returnValue($mockDependency));
 
         return $partialMock;
@@ -42,7 +40,7 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
      */
     private function getMockDependency()
     {
-        $mockDependency = $this->getMock(Dependency::class, [], [], '', true);
+        $mockDependency = $this->getMock(Dependency::class, [], [], '', false);
 
         $mockDependency
             ->expects($this->once())

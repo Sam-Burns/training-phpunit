@@ -3,7 +3,7 @@ namespace PhpUnitTrainingTest\Exercise02;
 
 use PhpUnitTraining\Exercise02\Subject1;
 
-class Subject1XXXX extends \PHPUnit_Framework_TestCase
+class Subject1Test extends \PHPUnit_Framework_TestCase
 {
     public function testIts42()
     {
